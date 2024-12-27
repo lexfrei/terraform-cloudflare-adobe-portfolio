@@ -1,5 +1,5 @@
 module "adobe_portfolio" {
-  source  = "../../"
+  source  = "lexfrei/adobe-portfolio/cloudflare"
   zone_id = "abc123zoneid"
   name    = "example.com"
   adobe_ips = [

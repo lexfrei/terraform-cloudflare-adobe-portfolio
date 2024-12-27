@@ -45,7 +45,7 @@ module "adobe_portfolio" {
 
 ```hcl
 module "adobe_portfolio" {
-  source  = "github.com/lexfrei/terraform-cloudflare-adobe-portfolio"
+  source  = "lexfrei/adobe-portfolio/cloudflare"
   version = "1.0.0"
 
   zone_id   = "your-zone-id"
