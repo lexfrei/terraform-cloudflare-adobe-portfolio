@@ -1,3 +1,3 @@
 output "created_records" {
-  value = cloudflare_record.adobe_portfolio[*].id
+  value = cloudflare_dns_record.adobe_portfolio[*].id
 }
