@@ -7,7 +7,7 @@ terraform {
   }
 }
 
-resource "cloudflare_record" "adobe_portfolio" {
+resource "cloudflare_dns_record" "adobe_portfolio" {
   count   = length(var.adobe_ips)
   zone_id = var.zone_id
   name    = replace(var.name, "www.", "")
@@ -16,7 +16,7 @@ resource "cloudflare_record" "adobe_portfolio" {
   proxied = var.proxied
 }
 
-resource "cloudflare_record" "www_adobe_portfolio" {
+resource "cloudflare_dns_record" "www_adobe_portfolio" {
   count   = length(var.adobe_ips)
   zone_id = var.zone_id
   name    = "www.${replace(var.name, "www.", "")}"
