@@ -14,6 +14,7 @@ resource "cloudflare_dns_record" "adobe_portfolio" {
   content = var.adobe_ips[count.index]
   type    = var.record_type
   proxied = var.proxied
+  ttl     = var.ttl
 }
 
 resource "cloudflare_dns_record" "www_adobe_portfolio" {
@@ -23,4 +24,5 @@ resource "cloudflare_dns_record" "www_adobe_portfolio" {
   content = var.adobe_ips[count.index]
   type    = var.record_type
   proxied = var.proxied
+  ttl     = var.ttl
 }

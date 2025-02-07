@@ -25,3 +25,9 @@ variable "adobe_ips" {
   type        = list(string)
   default     = ["151.101.0.119", "151.101.64.119", "151.101.128.119", "151.101.192.119"]
 }
+
+variable "ttl" {
+  description = "Time to live (default: 300)"
+  type        = number
+  default     = 300
+}
