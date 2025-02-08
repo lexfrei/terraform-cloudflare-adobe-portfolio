@@ -27,7 +27,7 @@ variable "adobe_ips" {
 }
 
 variable "ttl" {
-  description = "Time to live (default: 300)"
+  description = "Time to live (default: auto)"
   type        = number
-  default     = 300
+  default     = 1
 }
